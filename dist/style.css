@@ -21,6 +21,14 @@ body {
   padding: 0;
 }
 
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url("/images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
 #card {
   background-color: white;
   width: 87%;
