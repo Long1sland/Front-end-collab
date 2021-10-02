@@ -1,0 +1,20 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url("/images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: $paleBlue;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
