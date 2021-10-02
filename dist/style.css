@@ -1,14 +1,27 @@
 html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+.card-main {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+p {
+  font-size: 13px;
 }
 
 body {
@@ -19,6 +32,7 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 @media only screen and (min-width: 768px) {
@@ -36,12 +50,94 @@ body {
   min-width: 300px;
   height: 80%;
   max-height: 537px;
-  min-height: 320px;
+  min-height: 508px;
   position: relative;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   border-radius: 20px;
 }
 /*# sourceMappingURL=style.css.map */
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px 45px;
+}
+
+.card-content p {
+  margin: 0;
+  color: rgb(148, 147, 147);
+}
+
+.content-text {
+  line-height: 18px;
+}
+
+.plan,
+.plan-details {
+  display: flex;
+  align-items: center;
+}
+
+.plan {
+  justify-content: space-between;
+  background-color: rgb(248, 248, 248);
+  padding: 15px 25px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+span {
+  color: #000;
+  font-weight: 700;
+}
+
+.plan-details {
+  justify-content: space-between;
+  width: 60%;
+}
+
+.plan-details p {
+  font-size: 13px;
+  line-height: 25px;
+}
+
+.plan-info {
+  width: 95%;
+}
+
+.change-plan {
+  width: 20%;
+  font-size: 13px;
+}
+
+.music-icon {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.pay {
+  padding: 10px 0;
+  border-radius: 10px;
+  border: solid 2px hsl(245, 75%, 52%);
+  margin-bottom: 20px;
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  box-shadow: 0 18px 18px -8px hsl(245, 98%, 95%);
+}
+
+.cancel {
+  background-color: #fff;
+  border: none;
+  color: rgb(148, 147, 147);
+}
